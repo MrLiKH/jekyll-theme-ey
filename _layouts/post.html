@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<div class="page-content wc-container">
+
+    <div class="post">
+        <h1>{{ page.title }}</h1>
+        <p class="post-meta">
+            {% if (page.categories.size > 0 %}
+      <a class="categories" href="{{ site.url }}{{ site.baseurl }}/categories/index.html#{{ page.categories | cgi_encode }}" data-toggle="tooltip" rel="tag">
+      {{ page.categories | array_to_sentence_string }}
+      </a> |
+        {% endif %}
+        <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%b %-d, %Y" }}
+        </time>
+        {% if page.author %}
+        {% assign author = site.data.author[page.author] %}
+        | By
+        <a rel="author" href="{{ author.link }}" title="{{ author.name }}" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <person>{{ author.name }}</person>
+        </a>
+        {% endif %}
+        </p>
+        <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+            {{ content }}
+        </article>
+    </div>
+
+    <div class="post-footer">
+        <div class="column-1">
+        {% if page.previous %}
+            <a href="{{ page.previous.url | prepend: site.baseurl }}" title="{{ page.previous.title }}" rel="bookmark">&laquo; 上一页</a>
+        {% endif %}
+        </div>
+        <div class="column-2"><a href="{{ '/' | prepend: site.baseurl | prepend: site.url }} ">Home</a></div>
+        <div class="column-3">
+        {% if page.next %}
+            <a href="{{ page.next.url | prepend: site.baseurl }}" title="{{ page.next.title }}" rel="bookmark">下一页 &raquo;</a>
+        {% endif %}
+        </div>
+        {% if site.data.social.duoshuo_shortname and page.comments == true %}
+        <div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="{{ site.url }}{{ page.url }}"></div>
+        {% endif %}
+    </div>
+</div>

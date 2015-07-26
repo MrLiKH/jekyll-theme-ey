@@ -1,0 +1,21 @@
+<header class="main-header">
+    <div class="wc-container">
+        <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+        <h2>{{ site.subtitle }}</h2>
+        <nav>
+            <ul>
+            {% for nav in site.data.navs %}
+            {% if nav.external %}
+                <li><a href="{{ nav.url }}">{{ nav.title }}</a></li>
+            {% else %}
+                {% if page.url == nav.url %}
+                <li><a href="{{ nav.url | prepend: site.baseurl | prepend: site.url }}" class="active" rel="bookmark">{{ nav.title }}</a></li>
+                {% else %}
+                <li><a href="{{ nav.url | prepend: site.baseurl | prepend: site.url }}" rel="bookmark">{{ nav.title }}</a></li>
+                {% endif %}
+            {% endif %}
+            {% endfor %}
+            </ul>
+        </nav>
+    </div>
+</header>
