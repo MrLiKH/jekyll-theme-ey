@@ -10,6 +10,8 @@ description: > # this means to ignore newlines until "baseurl:"
 keywords: "blog, gentoo, linux, vim, zsh"
 favicon: http://ibrother.qiniudn.com/favicon.ico
 highlighting-style: solarized-light
+repo: jekyll-theme-ey
+branch: gh-pages
 
 # Where things are
 source:      .
