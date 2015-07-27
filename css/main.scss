@@ -659,6 +659,21 @@ p.post-meta {
 
 /* --------------------------------
 
+ Border-bottom for articles
+
+--------------------------------- */
+.post h1 {
+  border-bottom: 1px solid #657b83;
+}
+article h1 {
+  border-bottom: 1px solid #657b83;
+}
+article h2 {
+  border-bottom: 1px solid #657b83;
+}
+
+/* --------------------------------
+
  Improve this post on github
 
 --------------------------------- */
