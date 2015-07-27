@@ -3,10 +3,9 @@ rvm:
 - 2.1
 # Assume bundler is being used, install step will run `bundle install`.
 install: 
-- gem install jekyll
-
+- gem install jekyll html-proofer
 script: 
-- jekyll build --safe
+- jekyll build && htmlproof ./_site
 
 # branch whitelist
 branches:
