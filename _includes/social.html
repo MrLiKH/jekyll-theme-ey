@@ -1,7 +1,7 @@
 <h6>Follow me</h6>
 
 <ul class="social-media">
-{% if site.data.social.twitter %}
+    {% if site.data.social.twitter %}
     <li>
         <a title="{{ site.data.social.twitter }} on Twitter"
             href="https://twitter.com/{{ site.data.social.twitter }}"
@@ -13,6 +13,12 @@
     <li>
         <a title="{{ site.data.social.github }} on Github"
             href="https://github.com/{{ site.data.social.github }}"
+            class="github wc-img-replace" target="_blank">Github</a>
+    </li>
+    {% else %}
+    <li>
+        <a title="{{ site.github.owner_name }} on Github"
+            href="{{ site.github.owner_url }}"
             class="github wc-img-replace" target="_blank">Github</a>
     </li>
     {% endif %}
