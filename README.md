@@ -1,6 +1,7 @@
 # ey 中文名伊娃
-> fuck me, fuck my dog.
 [![Build Status](https://travis-ci.org/ibrother/jekyll-theme-ey.png)](https://travis-ci.org/ibrother/jekyll-theme-ey)
+
+> fuck me, fuck my dog.
 
 再简约的主题,再文艺的名字,也抵不过神一样的子标题.
 
