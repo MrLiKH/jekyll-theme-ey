@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div id="home" class="page-content wc-container">
+<div id="home" class="page-content wc-container" itemprop="mainContentOfPage">
   <div class="posts">
   {% if site.paginate %}
       {% for post in paginator.posts %}
@@ -24,8 +24,8 @@ layout: default
             {% if post.author %}
             {% assign author = site.data.author[post.author] %}
             | By
-            <a rel="author" href="{{ author.link }}" title="{{ author.name }}" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <person>{{ author.name }}</person>
+            <a rel="author" href="{{ author.link }}" title="{{ author.name }}" itemprop="url">
+            <person itemprop="author" itemprop="name" itemscope itemtype="http://schema.org/Person">{{ author.name }}</person>
             </a>
             {% endif %}
           </p>
@@ -90,8 +90,8 @@ layout: default
             {% if post.author %}
             {% assign author = site.data.author[post.author] %}
             | By
-            <a rel="author" href="{{ author.link }}" title="{{ author.name }}" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <person>{{ author.name }}</person>
+            <a rel="author" href="{{ author.link }}" title="{{ author.name }}" itemprop="url">
+            <person itemprop="author" itemprop="name" itemscope itemtype="http://schema.org/Person">{{ author.name }}</person>
             </a>
             {% endif %}
           </p>
