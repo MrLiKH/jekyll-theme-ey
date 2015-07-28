@@ -28,4 +28,67 @@
 * 使用微数据结构化网页
 * rakefile方便本地创建新文章和新页面
 
-# 目录结构
+## 目录结构
+这里不是jekyll目录结构的教程与介绍,想了解目录的作用可以看官方文档,这里仅对自定义自己站点的文件做简要说明,大部分自定义选项都暴露在主配置文件`_config.yml`和`_data`数据目录下的数据文件里,作为最终用户,可以很方便的修改.
+```
+jekyll-theme-ey
+├── 404.md            // 生成404页面的内容
+├── about.md          // 关于页面
+├── archive.md        // 用于生成归档页面
+├── categories.html
+├── _config.yml       // 主配置文件
+├── css
+│   ├── images
+│   │   ├── bullet.png
+│   │   ├── bullet.svg
+│   │   ├── harmony-blog-page.png
+│   │   ├── harmony-home-page.png
+│   │   ├── harmony-mobile.jpg
+│   │   ├── harmony.png
+│   │   ├── harmony-web-2.jpg
+│   │   ├── harmony-web-3.jpg
+│   │   ├── harmony-web.jpg
+│   │   ├── socials-icons.png
+│   │   └── socials-icons.svg
+│   └── main.scss         // 主css样式表,通过在其中引用其他分开的子样式表
+├── _data
+│   ├── author.yml        // 在这里设置博客作者的信息
+│   ├── navs.yml          // 用于定义导航菜单
+│   ├── rolls.yml         // 在这个文件里添加友情链接
+│   ├── social.yml        // 用来设置社交帐号链接
+│   └── webmaster.yml     // 添加站长验证及网站分析相关的设置
+├── feed.xml
+├── Gemfile
+├── _includes
+│   ├── baidu_analytics.html
+│   ├── blogroll.html
+│   ├── duoshuo_comments.html
+│   ├── footer.html
+│   ├── google_analytics.html
+│   ├── header.html
+│   ├── head.html
+│   ├── scripts.html
+│   └── social.html
+├── index.html
+├── _layouts
+│   ├── default.html
+│   ├── page.html
+│   └── post.html
+├── LICENSE
+├── _posts
+│   ├── 2014-12-18-code-highlighting.md
+│   ├── 2015-07-23-welcome-to-jekyll.markdown
+│   └── 2015-07-27-example-content.md
+├── rakefile
+├── README.md
+├── robots.txt
+├── _sass
+│   ├── _layout.scss
+│   ├── _mixins.scss
+│   ├── _monokai.scss
+│   ├── _normalize.scss
+│   ├── _solarized-light.scss
+│   └── _variables.scss
+├── sitemap.xml
+└── tags.html
+```
