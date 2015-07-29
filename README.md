@@ -23,7 +23,7 @@
 * 支持 [Open Graph](https://developers.facebook.com/docs/opengraph/) 和 [Twitter Cards](https://dev.twitter.com/docs/cards) 带给你更好的社交分享体验
 * 支持chrome color和windows8 color
 * 使用模板本身的代码而不是通过插件去实现[分类](http://blog.ibrother.me/jekyll-theme-ey/categories/) 和 [标签](http://blog.ibrother.me/jekyll-theme-ey/tags/) 页面
-* 主题包含了solarized-light和monokai两种代码高亮样式,默认是solarized-light,你可以简单的修改配置文件快速切换,也可以很方便的加入自己想要的高亮样式
+* 强迫症福利,主题内置了包括solarized-light和monokai等共25套代码高亮样式,默认是solarized-light,你可以在配置文件中快速切换,也可以很方便的加入自己想要的高亮样式
 * rss订阅采用更好的atom格式
 * 使用标准的sitemap站点地图
 * 使用微数据结构化网页
