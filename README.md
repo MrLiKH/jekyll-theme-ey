@@ -79,16 +79,41 @@ jekyll-theme-ey
 ├── _posts
 │   ├── 2014-12-18-code-highlighting.md
 │   ├── 2015-07-23-welcome-to-jekyll.markdown
-│   └── 2015-07-27-example-content.md
+│   ├── 2015-07-27-example-content.md
+│   └── 2015-07-29-sample-mathjax-post.md
 ├── rakefile
 ├── README.md
 ├── robots.txt
 ├── _sass
 │   ├── _layout.scss
 │   ├── _mixins.scss
-│   ├── _monokai.scss
 │   ├── _normalize.scss
-│   ├── _solarized-light.scss
+│   ├── syntax-highlighting
+│   │   ├── _autumn.scss
+│   │   ├── _borland.scss
+│   │   ├── _bw.scss
+│   │   ├── _colorful.scss
+│   │   ├── _default.scss
+│   │   ├── _emacs.scss
+│   │   ├── _friendly.scss
+│   │   ├── _fruity.scss
+│   │   ├── _igor.scss
+│   │   ├── _manni.scss
+│   │   ├── _monokai.scss
+│   │   ├── _murphy.scss
+│   │   ├── _native.scss
+│   │   ├── _paraiso-dark.scss
+│   │   ├── _paraiso-light.scss
+│   │   ├── _pastie.scss
+│   │   ├── _perldoc.scss
+│   │   ├── _rrt.scss
+│   │   ├── _solarized-dark.scss
+│   │   ├── _solarized-light.scss
+│   │   ├── _tango.scss
+│   │   ├── _trac.scss
+│   │   ├── _vim.scss
+│   │   ├── _vs.scss
+│   │   └── _xcode.scss
 │   └── _variables.scss
 ├── sitemap.xml
 └── tags.html
