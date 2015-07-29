@@ -9,7 +9,7 @@
         "variables",
         "mixins",
         "layout",
-        "{{ site.highlighting-style }}"
+        "syntax-highlighting/{{ site.highlighting-style }}"
 ;
 
 /* --------------------------------
@@ -28,7 +28,6 @@ html * {
 }
 
 body {
-  background-color: #fdf6e3;
   font: {
     size: 100%;
     family: $primary-font; // variables inside partials > _variables.scss
