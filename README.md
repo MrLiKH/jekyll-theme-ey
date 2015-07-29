@@ -93,3 +93,5 @@ jekyll-theme-ey
 ├── sitemap.xml
 └── tags.html
 ```
+
+[![Analytics](https://ga-beacon.appspot.com/UA-52116871-4/jekyll-theme-ey/readme)](https://github.com/igrigorik/ga-beacon) [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/ibrother/jekyll-theme-ey/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
