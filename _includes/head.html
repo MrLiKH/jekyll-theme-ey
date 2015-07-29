@@ -64,4 +64,9 @@
   {% if site.data.webmaster.baidu_analytics %}
   {% include baidu_analytics.html %}
   {% endif %}
+
+  <!-- MathJax -->
+  {% if page.mathjax %}
+  <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  {% endif %}  
 </head>

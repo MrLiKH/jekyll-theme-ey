@@ -4,7 +4,7 @@ author: ibrother
 title: "Example content"
 description: sample post
 modified: 2015-07-27
-category: Sample-post
+category: sample-post
 tags: [example]
 comments: true
 ---
