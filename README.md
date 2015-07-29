@@ -1,7 +1,8 @@
-# ey 中文名伊娃
-[![Build Status](https://travis-ci.org/ibrother/jekyll-theme-ey.png)](https://travis-ci.org/ibrother/jekyll-theme-ey)
+# ey 中文名伊娃 [![Build Status](https://travis-ci.org/ibrother/jekyll-theme-ey.png)](https://travis-ci.org/ibrother/jekyll-theme-ey)
 
 > fuck me, fuck my dog.
+
+[在线预览](http://blog.ibrother.me/jekyll-theme-ey/)
 
 再简约的主题,再文艺的名字,也抵不过神一样的子标题.
 
@@ -29,12 +30,12 @@
 * rakefile方便本地创建新文章和新页面
 
 ## 目录结构
-这里不是jekyll目录结构的教程与介绍,想了解目录的作用可以看官方文档,这里仅对自定义自己站点的文件做简要说明,大部分自定义选项都暴露在主配置文件`_config.yml`和`_data`数据目录下的数据文件里,作为最终用户,可以很方便的修改.
+这里不是jekyll目录结构的教程与介绍,想了解目录的作用可以看官方文档,这里仅对自定义自己站点的文件做简要说明,大部分自定义选项都暴露在主配置文件`_config.yml`和`_data`数据目录下的数据文件里,作为最终用户,你可以很方便的修改.
 ```
 jekyll-theme-ey
-├── 404.md            // 生成404页面的内容
-├── about.md          // 关于页面
-├── archive.md        // 用于生成归档页面
+├── 404.md
+├── about.md
+├── archive.md
 ├── categories.html
 ├── _config.yml       // 主配置文件
 ├── css
